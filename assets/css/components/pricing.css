@@ -1,0 +1,104 @@
+/* ================= NOS TARIFS ================= */
+
+.pricing {
+  background: var(--white);
+  padding: 60px 0 80px;
+}
+
+.pricing-inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 35px;
+}
+
+.pricing-subtitle {
+  font-size: 16px;
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 310px);
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card */
+.pricing-card {
+  background: var(--blue);
+  border-radius: 30px;
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icône */
+.pricing-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+/* Textes */
+.pricing-name {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: -6px;
+}
+
+.pricing-price {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.pricing-price span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pricing-desc {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 2.6rem;
+  margin-bottom: 30px;
+}
+
+/* Bouton */
+.pricing-btn {
+  background: var(--white);
+  color: var(--blue);
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 1000px */
+@media screen and (max-width: 1000px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .pricing-card {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,127 @@
+/* ================= NOS SERVICES ================= */
+
+.services {
+  background: var(--lightgrey);
+  padding: 80px 0;
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.services-inner {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 35px;
+}
+
+.services-subtitle {
+  color: var(--grey);
+  margin-bottom: 50px;
+  font-size: 16px;
+  max-width: none;
+  margin: 0 auto 28px;
+  width: min(1100px, 96%);
+  white-space: nowrap;
+}
+
+.services-title,
+.services-subtitle {
+  text-align: center;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card */
+.service-card {
+  background: var(--white);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 360px;
+}
+
+/* Header Card */
+.service-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.service-name {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--black);
+  flex: 1;
+}
+
+/* Icônes */
+.service-icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Texte */
+.service-text {
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+/* Lien */
+.service-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 1000px */
+@media screen and (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+  .services-subtitle {
+    white-space: normal;
+  }
+  .services-grid {
+    grid-template-columns: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .service-card {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .service-name {
+    font-size: 32px;
+  }
+}

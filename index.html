@@ -9,20 +9,20 @@
 
   <body>
     <!-- ================= HEADER ================= -->
-    <header class="site-header">
+    <header>
       <div class="header-inner">
         <a class="logo" href="#">
           <img src="assets/img/logo.svg" alt="Logo" />
         </a>
 
         <nav class="nav" aria-label="Navigation principale">
-          <a href="#" class="nav-link">ACCUEIL</a>
-          <a href="#" class="nav-link">SERVICES</a>
-          <a href="#" class="nav-link">PORTFOLIO</a>
-          <a href="#" class="nav-link">TARIFS</a>
-          <a href="#" class="nav-link">A PROPOS</a>
-          <a href="#" class="nav-link">EQUIPE</a>
-          <a href="#" class="nav-link">CONTACT</a>
+          <a href="#">ACCUEIL</a>
+          <a href="#">SERVICES</a>
+          <a href="#">PORTFOLIO</a>
+          <a href="#">TARIFS</a>
+          <a href="#">A PROPOS</a>
+          <a href="#">EQUIPE</a>
+          <a href="#">CONTACT</a>
         </nav>
 
         <div class="header-actions">
@@ -37,13 +37,13 @@
       </div>
 
       <nav id="mobileMenu" class="mobile-menu" aria-label="Menu mobile">
-        <a href="#" class="mobile-link">ACCUEIL</a>
-        <a href="#" class="mobile-link">SERVICE</a>
-        <a href="#" class="mobile-link">PORTFOLIO</a>
-        <a href="#" class="mobile-link">TARIFS</a>
-        <a href="#" class="mobile-link">A PROPOS</a>
-        <a href="#" class="mobile-link">EQUIPE</a>
-        <a href="#" class="mobile-link">CONTACT</a>
+        <a href="#">ACCUEIL</a>
+        <a href="#">SERVICE</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">TARIFS</a>
+        <a href="#">A PROPOS</a>
+        <a href="#">EQUIPE</a>
+        <a href="#">CONTACT</a>
       </nav>
     </header>
 
@@ -51,10 +51,9 @@
     <main>
       <!-- ================= SLIDER ================= -->
       <section class="slider" aria-label="Slider principal">
-        <button
-          class="slider-arrow prev icon-arrow-left"
-          type="button"
-        ></button>
+        <button class="slider-arrow prev" type="button">
+          <img src="assets/img/icons/arrow-left.svg" alt="Précédent" />
+        </button>
         <div class="slider-viewport">
           <div class="slider-track">
             <!-- Slide 1 -->
@@ -122,10 +121,9 @@
           </div>
         </div>
 
-        <button
-          class="slider-arrow next icon-arrow-right"
-          type="button"
-        ></button>
+        <button class="slider-arrow next" type="button">
+          <img src="assets/img/icons/arrow-right.svg" alt="Suivant" />
+        </button>
       </section>
 
       <!-- ================= NOS SERVICES ================= -->
@@ -142,7 +140,9 @@
             <article class="service-card">
               <div class="service-head">
                 <h3 class="service-name">Graphic<br />Design</h3>
-                <span class="service-icon icon-brush"></span>
+                <div class="service-icon">
+                  <img src="assets/img/icons/brush.svg" alt="Graphic Design" />
+                </div>
               </div>
 
               <p class="service-text">
@@ -160,7 +160,9 @@
             <article class="service-card">
               <div class="service-head">
                 <h3 class="service-name">Web<br />design</h3>
-                <span class="service-icon icon-design"></span>
+                <div class="service-icon">
+                  <img src="assets/img/icons/design.svg" alt="Web Design" />
+                </div>
               </div>
 
               <p class="service-text">
@@ -177,7 +179,12 @@
             <article class="service-card">
               <div class="service-head">
                 <h3 class="service-name">Marketing<br />Digital</h3>
-                <span class="service-icon icon-lightning"></span>
+                <div class="service-icon">
+                  <img
+                    src="assets/img/icons/lightning.svg"
+                    alt="Marketing Digital"
+                  />
+                </div>
               </div>
 
               <p class="service-text">
@@ -318,27 +325,32 @@
       </section>
     </main>
 
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" aria-label="Pied de page">
+      <div class="footer-inner">
+        <img src="assets/img/logo.svg" alt="Logo" class="footer-logo" />
+
+        <div class="footer-socials">
+          <a href="#" class="footer-icon" aria-label="Facebook">
+            <img src="assets/img/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" class="footer-icon" aria-label="LinkedIn">
+            <img src="assets/img/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="#" class="footer-icon" aria-label="Instagram">
+            <img src="assets/img/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="footer-icon" aria-label="X">
+            <img src="assets/img/icons/x.svg" alt="X" />
+          </a>
+        </div>
+
+        <p class="footer-phone">06 06 06 06 06</p>
+        <p class="footer-email">support@coucou.com</p>
+
+        <p class="footer-credits">Designed by des élèves pas trop mauvais</p>
+      </div>
+    </footer>
     <script src="assets/js/script.js"></script>
   </body>
-  <footer class="site-footer" aria-label="Pied de page">
-    <div class="footer-inner">
-      <img src="assets/img/logo.svg" alt="Logo" class="footer-logo" />
-
-      <div class="footer-socials">
-        <a href="#" class="footer-icon icon-facebook" aria-label="Facebook"></a>
-        <a href="#" class="footer-icon icon-linkedin" aria-label="LinkedIn"></a>
-        <a
-          href="#"
-          class="footer-icon icon-instagram"
-          aria-label="Instagram"
-        ></a>
-        <a href="#" class="footer-icon icon-x" aria-label="X"></a>
-      </div>
-
-      <p class="footer-phone">06 06 06 06 06</p>
-      <p class="footer-email">support@coucou.com</p>
-
-      <p class="footer-credits">Designed by des élèves pas trop mauvais</p>
-    </div>
-  </footer>
 </html>
